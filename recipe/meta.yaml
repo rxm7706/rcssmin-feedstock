@@ -1,5 +1,5 @@
 {% set name = "rcssmin" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rcssmin-{{ version }}.tar.gz
-  sha256: b35c0c89cdac8fc356c2b0985f3e534e85cc18d1971d902d1eac7fe6b4ff566c
+  sha256: 806986eaf7414545edc28a1d29523e9560e49e151ff4a337d9d1f0271d6e1cc4
 
 build:
   noarch: generic
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
